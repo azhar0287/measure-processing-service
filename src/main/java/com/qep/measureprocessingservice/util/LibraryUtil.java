@@ -1,6 +1,6 @@
 package com.qep.measureprocessingservice.util;
 
-import com.qep.measureprocessingservice.util.service.BaseCodeMapperService;
+import com.qep.measureprocessingservice.api.service.BaseCodeMapperService;
 import org.cqframework.cql.elm.execution.CodeSystemDef;
 import org.cqframework.cql.elm.execution.Library;
 
@@ -14,7 +14,7 @@ public class LibraryUtil {
 				return codeSystemDef;
 			}
 		}
-		throw new BaseCodeMapperService.MissingCodeSystemDef("Unable to find Codesystem with following URI in library: " + URI);
+		throw new BaseCodeMapperService.MissingCodeSystemDef("Unable to find Code system with following URI in library: " + URI);
 	}
 	
 	public static CodeSystemDef getCodeSystemDefFromName(Library library, String name) {
@@ -23,7 +23,7 @@ public class LibraryUtil {
 				return codeSystemDef;
 			}
 		}
-		throw new BaseCodeMapperService.MissingCodeSystemDef("Unable to find Codesystem with following name in library: " + name);
+		throw new BaseCodeMapperService.MissingCodeSystemDef("Unable to find Code system with following name in library: " + name);
 	}
 	
 	public static CodeSystemDef addCodeSystemToLibrary(Library library,String name,String URI) {

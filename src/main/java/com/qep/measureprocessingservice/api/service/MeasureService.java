@@ -1,4 +1,4 @@
-package com.qep.measureprocessingservice.api;
+package com.qep.measureprocessingservice.api.service;
 
 import com.qep.measureprocessingservice.execution.Executor;
 import org.springframework.http.HttpStatus;
